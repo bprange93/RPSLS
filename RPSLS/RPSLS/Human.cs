@@ -8,5 +8,14 @@ namespace RPSLS
 {
     class Human
     {
+
+        //member variables
+
+
+        //constructor
+
+
+        //member methods
+
     }
 }

@@ -8,5 +8,14 @@ namespace RPSLS
 {
     class AI
     {
+
+        //member variables
+
+
+        //constructor
+
+
+        //member methods
+
     }
 }
