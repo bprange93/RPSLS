@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class AI
+    class AI : Player
     {
 
         //member variables
 
 
         //constructor
+        public AI()
+        {
 
+        }
 
         //member methods
-
+        public override void ChooseGesture()
+        {
+            //have a random gesture be selected IF AI is chosen. 
+        }
     }
 }
