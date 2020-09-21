@@ -38,5 +38,31 @@ namespace RPSLS
                     break;
             }
         }
+
+
+        public void RunGame()
+        {
+            //Intro Section
+            //Greeting
+            //Rules
+
+            //Choose game tpye - PvP or PvAI
+            //Gameplay Rounds Section
+            //Display current state of game points
+            //Display gesture options
+            //Player One Chooses a gesture
+            //Display gesture options
+            //Player Two Chooses a gesture IF chosen
+            //compare gestures to see who wins to award point for round
+            //display outcome of the round
+            //utiliza a check on points to see if we need another round
+
+
+
+            //EndGame
+            //Display Winner of game
+            // optionally prompt for a new game
+            
+        }
     }
 }
