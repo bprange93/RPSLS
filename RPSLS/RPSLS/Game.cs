@@ -56,9 +56,10 @@ namespace RPSLS
             Console.WriteLine("Lizard eats Paper");
             Console.WriteLine("Paper disproves Spock");
             Console.WriteLine("Spock vaporizes Rock");            
-            Console.ReadLine();
+            
             //Rules
-
+            ChooseGameMode();
+            Console.ReadLine();
             //Choose game tpye - PvP or PvAI
             
             //Gameplay Rounds Section
