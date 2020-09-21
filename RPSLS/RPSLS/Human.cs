@@ -14,8 +14,8 @@ namespace RPSLS
 
         //constructor
         public Human() 
-        { 
-        
+        {
+            
         }
 
         //member methods
