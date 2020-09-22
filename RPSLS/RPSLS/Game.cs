@@ -22,23 +22,6 @@ namespace RPSLS
 
         //member methods
 
-        public void ChooseGameMode()
-        {
-            Console.WriteLine("Do you want 1 player or 2 players? Type '1' or '2':");
-            string response = Console.ReadLine();
-            switch (response)
-            {
-                case "1":
-                    playerTwo = new AI();
-                    break;
-                case "2":
-                    playerTwo = new Human();
-                    break;
-                default:
-                    break;
-            }
-        }
-
 
         public void RunGame()
         {
@@ -57,9 +40,7 @@ namespace RPSLS
             Console.WriteLine("Paper disproves Spock");
             Console.WriteLine("Spock vaporizes Rock");            
             
-            //Rules
-            ChooseGameMode();
-            Console.ReadLine();
+            //Rules            
             //Choose game tpye - PvP or PvAI
             
             //Gameplay Rounds Section
