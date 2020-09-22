@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,17 +18,21 @@ namespace RPSLS
         //constructor
         public Game()
         {
-            playerOne = new Human();
+           
+
+            playerOne.ChooseGesture();
+            playerTwo.ChooseGesture();
         }
 
         //member methods
 
-
-        public void RunGame()
+       public void RunGame()
         {
             //Intro Section
             Console.WriteLine("Welcome to Rock Paper Scissors Lizard Spock!");
             //Greeting
+
+            //rules
             Console.WriteLine("Pay attention carefully for here are the rules on how to defeat your opponent. ");
             Console.WriteLine("Rock crushes Scissors");
             Console.WriteLine("Paper covers Rock");
@@ -39,10 +44,13 @@ namespace RPSLS
             Console.WriteLine("Lizard eats Paper");
             Console.WriteLine("Paper disproves Spock");
             Console.WriteLine("Spock vaporizes Rock");            
-            
-            //Rules            
+            Console.ReadLine();
+
             //Choose game tpye - PvP or PvAI
-            
+            pickNumberofPlayers();
+           
+            Human gestures = new Human();
+            gestures.ChooseGesture();
             //Gameplay Rounds Section
             //Display current state of game points
             //Display gesture options
@@ -59,6 +67,22 @@ namespace RPSLS
             //Display Winner of game
             // optionally prompt for a new game
 
+        }
+        public void pickNumberofPlayers()
+        {
+            Console.WriteLine("Would you like to face another player or the computer?");
+            string response = Console.ReadLine();
+            switch (response)
+            {
+                case "player":
+                    playerOne = new Human();
+                    playerTwo = new Human();
+                    break;
+                case "computer":
+                    playerOne = new Human();
+                    playerTwo = new Computer();
+                    break;
+            }
         }
     }
 }

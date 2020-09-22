@@ -10,15 +10,17 @@ namespace RPSLS
     {
 
         //member variables
+        public bool computer;
         public int score;
-        public List<string> gestures;
-        public string chosenGesture;
+        public int roundsWon;
+        public List<string> gesturesList = new List<string>() { "rock", "paper", "scissors", "lizard", "Spock" };
+        public string gesture;
 
         //constructor
         public Player()
         {
             score = 0;
-            gestures = new List<string>() { "rock", "paper", "scissors", "lizard", "Spock" };
+            
 
         }
 
