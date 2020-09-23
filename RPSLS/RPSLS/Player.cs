@@ -20,7 +20,7 @@ namespace RPSLS
         public Player()
         {
             score = 0;
-            
+            roundsWon = 0;
 
         }
 

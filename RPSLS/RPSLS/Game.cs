@@ -14,6 +14,7 @@ namespace RPSLS
         //member variables
         Player playerOne;
         Player playerTwo;
+        int scoreTowWin = 2;
 
         //constructor
         public Game()
@@ -48,10 +49,11 @@ namespace RPSLS
 
             //Choose game tpye - PvP or PvAI
             pickNumberofPlayers();
-           
-            Human gestures = new Human();
-            gestures.ChooseGesture();
+
             //Gameplay Rounds Section
+            Console.WriteLine("Game will be best 2/3.");
+            Console.ReadLine();
+
             //Display current state of game points
             //Display gesture options
             //Player One Chooses a gesture
